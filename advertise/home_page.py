@@ -22,23 +22,23 @@ def get_html(companies):
 
 
 				<p></p>
-				<a href="http://localhost:82/ad?company=''' + companies[0] + '''" target="_blank">
+				<a href="/ad?company=''' + companies[0] + '''" target="_blank">
 				<img src="a.jpg" alt="Trulli" width="470" height="300">
 				</a>
-				<a href="http://localhost:82/ad?company=''' + companies[1] + '''" target="_blank">
+				<a href="/ad?company=''' + companies[1] + '''" target="_blank">
 				<img src="b.png" alt="Trulli" width="470" height="300">
 				</a>
-				<a href="http://localhost:82/ad?company=''' + companies[2] + '''" target="_blank">
+				<a href="/ad?company=''' + companies[2] + '''" target="_blank">
 				<img src="c.jpg" alt="Trulli" width="470" height="300">
 				</a>
 				<p></p>
-				<a href="http://localhost:82/ad?company=''' + companies[3] + '''" target="_blank">
+				<a href="/ad?company=''' + companies[3] + '''" target="_blank">
 				<img src="d.jpg" alt="Trulli" width="470" height="300">
 				</a>
-				<a href="http://localhost:82/ad?company=''' + companies[4] + '''" target="_blank">
+				<a href="/ad?company=''' + companies[4] + '''" target="_blank">
 				<img src="e.jpg" alt="Trulli" width="470" height="300">
 				</a>
-				<a href="http://localhost:82/ad?company=''' + companies[5] + '''" target="_blank">
+				<a href="/ad?company=''' + companies[5] + '''" target="_blank">
 				<img src="f.jpg" alt="Trulli" width="470" height="300">
 				</a>
 				</div>

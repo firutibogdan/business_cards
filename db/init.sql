@@ -817,6 +817,7 @@ END //
 
 DELIMITER ;
 
+call ADD_MSG('mihai.popescu@yahoo.com', 'dadelina@yahoo.com', 'Buna! Ce mai faci?');
 call ADD_COMPANY('ITSecBF', '0742-422-346', 'hr@itsecbf.com', 'Str. Dorobanti, Nr. 44', 'Internet Security', 'Romania', 'Bucharest', 44.437019, 26.086546);
 call ADD_COMPANY('FlowerRose', '0742-422-333', 'hr@flowerrose.com', 'Str. Anghel Petru, Nr. 21', 'Agriculture', 'Romania', 'Cluj-Napoca', 46.775389, 23.607987);
 call ADD_COMPANY('Regio', '0742-422-297', 'apa@regio.com', 'Str. Geneva, Nr. 124', 'Water Provider', 'Romania', 'Bucharest', 44.440619, 26.082736);
@@ -837,5 +838,4 @@ call ADD_PERSON('Cescu', 'Catalina', '0799-234-188', 'ccatalin@yahoo.com', 'd4c7
 call ADD_PERSON('Ceausu', 'Mihnea', '0714-222-345', 'mceausu@gmail.com', 'c80c791f910335a344b9a7d827cca00af6ddb59d416f928907e7179dff182868', '1996-12-03', 'MichaMich', 'Sales', 'SEO', 'Spain', 'Barcelona');
 call ADD_PERSON('Dodo', 'Adelina', '0749-299-999', 'dadelina@yahoo.com', '35ac869c65fcd31a92e2340cfa254a0ed6cb325d0ca43aaae110e757a5ea793e', '1986-06-24', 'FlowerPot', 'HR', 'Personal', 'Romania', 'Timisoara');
 call ADD_PERSON('Cosma', 'Catrina', '0788-149-227', 'ccatrina@gmail.com', '8e1e14755e7651183916f5400a935688345413f1a9b02879aed68ac45a82732e', '1955-01-01', 'BricoHouse', 'Sales', 'Shop Assistant', 'Romania', 'Constanta');
-call ADD_MSG('mihai.popescu@yahoo.com', 'dadelina@yahoo.com', 'Buna! Ce mai faci?');
 call ADD_MSG('dadelina@yahoo.com', 'mihai.popescu@yahoo.com', 'Hello! Pe la munca. Tu?');

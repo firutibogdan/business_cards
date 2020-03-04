@@ -1,0 +1,87 @@
+version: "3"
+services:
+  db:
+    image: mysql:5.7
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "32000:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ./data:/var/lib/mysql
+      - ./db:/docker-entrypoint-initdb.d/:ro
+    networks:
+      - webnet
+
+  interface:
+    image: firutibogdan/business_cards:interface
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    links:
+      - db
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+    networks:
+      - webnet
+
+  grafana:
+    image: grafana/grafana:latest
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    ports:
+      - '3000:3000'
+    user: "0"
+    volumes:
+      - ./grafana:/var/lib/grafana
+    links:
+      - db
+    depends_on:
+      - db
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,briangann-gauge-panel,natel-plotly-panel,grafana-simple-json-datasource
+    networks:
+      - webnet
+
+  interface_msg:
+    image: firutibogdan/business_cards:interface_msg
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    links:
+      - db
+    depends_on:
+      - db
+    ports:
+      - "81:81"
+    networks:
+      - webnet
+
+  advertise:
+    image: firutibogdan/business_cards:advertise
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    links:
+      - db
+    depends_on:
+      - db
+    ports:
+      - "82:82"
+    networks:
+      - webnet
+
+networks:
+  webnet:
