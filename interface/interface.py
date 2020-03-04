@@ -344,8 +344,8 @@ async def edit_c_info(request):
 async def basic(request):
 	# show user menu
 	if auth.username(request) == 'admin':
-		return response.html(home_page.get_html(True))
-	return response.html(home_page.get_html(False))
+		return response.html(home_page.get_html(True, 'admin'))
+	return response.html(home_page.get_html(False, auth.username(request)))
 
 @app.route("/success")
 @auth.login_required

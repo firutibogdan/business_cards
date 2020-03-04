@@ -1,5 +1,5 @@
 
-def get_html(admin):
+def get_html(admin, username):
 	text = '''
 			<html>
 			<head>
@@ -42,7 +42,7 @@ def get_html(admin):
 			<body>
 
 				<div align="center">
-				<h2>Welcome!</h2>
+				<h2>Welcome, ''' + username + '''!</h2>
 				'''
 	
 	if admin:
