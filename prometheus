@@ -1,0 +1,6 @@
+docker-machine scp prometheus.yml myvm1:.
+docker-machine scp prometheus.yml myvm2:.
+docker-machine ssh myvm1 "sudo mkdir /etc/prometheus/"
+docker-machine ssh myvm2 "sudo mkdir /etc/prometheus/"
+docker-machine ssh myvm1 "docker network create --driver overlay prom"
+docker-machine ssh myvm1 "docker service create --replicas 1 --name metrics --network prom --mount type=bind,source=`pwd`/prometheus.yml,destination=/etc/prometheus/prometheus.yml --publish 9090:9090/tcp prom/prometheus"

@@ -14,7 +14,10 @@ services:
       - ./data:/var/lib/mysql
       - ./db:/docker-entrypoint-initdb.d/:ro
     networks:
-      - webnet
+      - dbint
+      - dbintmsg
+      - dbads
+      - dbgraf
 
   interface:
     image: firutibogdan/business_cards:interface
@@ -29,7 +32,7 @@ services:
     ports:
       - "80:80"
     networks:
-      - webnet
+      - dbint
 
   grafana:
     image: grafana/grafana:latest
@@ -51,7 +54,7 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=admin
       - GF_INSTALL_PLUGINS=grafana-clock-panel,briangann-gauge-panel,natel-plotly-panel,grafana-simple-json-datasource
     networks:
-      - webnet
+      - dbgraf
 
   interface_msg:
     image: firutibogdan/business_cards:interface_msg
@@ -66,7 +69,7 @@ services:
     ports:
       - "81:81"
     networks:
-      - webnet
+      - dbintmsg
 
   advertise:
     image: firutibogdan/business_cards:advertise
@@ -81,7 +84,10 @@ services:
     ports:
       - "82:82"
     networks:
-      - webnet
+      - dbads
 
 networks:
-  webnet:
+  dbint:
+  dbintmsg:
+  dbads:
+  dbgraf:

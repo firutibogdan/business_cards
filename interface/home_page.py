@@ -65,7 +65,7 @@ def get_html(admin, username):
 
 				<script>
 				function showDashboard() {
-					location.assign("http://localhost:3000/d/ZD_0XMLZz/dashboard");
+					window.location = "http://" + window.location.hostname + ":3000/d/ZD_0XMLZz/dashboard";
 				}
 
 				function myLogs() {
