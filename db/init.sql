@@ -816,3 +816,26 @@ BEGIN
 END //
 
 DELIMITER ;
+
+call ADD_COMPANY('ITSecBF', '0742-422-346', 'hr@itsecbf.com', 'Str. Dorobanti, Nr. 44', 'Internet Security', 'Romania', 'Bucharest', 44.437019, 26.086546);
+call ADD_COMPANY('FlowerRose', '0742-422-333', 'hr@flowerrose.com', 'Str. Anghel Petru, Nr. 21', 'Agriculture', 'Romania', 'Cluj-Napoca', 46.775389, 23.607987);
+call ADD_COMPANY('Regio', '0742-422-297', 'apa@regio.com', 'Str. Geneva, Nr. 124', 'Water Provider', 'Romania', 'Bucharest', 44.440619, 26.082736);
+call ADD_COMPANY('GasBack', '0743-322-546', 'gas@back.com', 'Str. Aluminiului, Nr. 21', 'Gas', 'Romania', 'Bucharest', 44.435763, 26.111755);
+call ADD_COMPANY('FoodFood', '0729-395-283', 'hr@foodfood.com', 'Str. Mircea Bades, Nr. 1', 'Food', 'Romania', 'Iasi', 47.159092, 27.615032);
+call ADD_COMPANY('BricoHouse', '0711-432-229', 'brico@brico.com', 'Str. Gargaritei, Nr. 29', 'House', 'Romania', 'Bucharest', 44.443971, 26.138219);
+call ADD_COMPANY('PubliciTaT', '0763-123-334', 'pub@pub.com', 'Str. Alioanei, Nr. 95', 'Publiciy', 'Romania', 'Targu Mures', 46.542835, 24.573699);
+call ADD_COMPANY('FlowerPot', '0712-234-558', 'pr@flowerpot.com', 'Str. Petru Rares, Nr. 139', 'Agriculture', 'Romania', 'Craiova', 44.316589, 23.819930);
+call ADD_COMPANY('SmartPhone', '0722-199-349', 'smart@smartphone.com', 'Drumul Sarii, Nr. 9', 'Mobile Phones', 'Romania', 'Arad', 46.180103, 21.304070);
+call ADD_COMPANY('MichaMich', '0744-542-330', 'micha@michamich.com', 'Bulevardul Revolutiei, Nr. 279', 'Hypermarket', 'Spain', 'Barcelona', 41.386158, 2.149816);
+call ADD_PERSON('Popescu', 'George', '0744-204-589', 'george.popescu@yahoo.com', '8db344f61fddd300e937855313a54a71eb0ec87f863f5c1ac274b34d7c83d4b6', '1999-05-08', 'ITSecBF', 'IT', 'Junior Programmer', 'Romania', 'Bucharest');
+call ADD_PERSON('Popescu', 'Mihai', '0744-204-588', 'mihai.popescu@yahoo.com', 'c48368f3b3e2217d5d2832adb6762268b8b1ed9aad0691f3e75f918b86feccdd', '1999-05-07', 'ITSecBF', 'IT', 'Junior Programmer', 'Romania', 'Timisoara');
+call ADD_PERSON('Popescu', 'Ion', '0744-204-587', 'ion.popescu@yahoo.com', 'c3e6a4a334c4bdb20d3e28ff0300d9659bb7f659e3c6911a073514a899b23feb', '1999-05-06', 'ITSecBF', 'IT', 'Junior Programmer', 'Romania', 'Timisoara');
+call ADD_PERSON('Mircea', 'Gheorghe', '0744-234-187', 'mircea.gheorghe@yahoo.com', 'a454d6cefc04661686e7110c7689e55513d4ae5c33bc13bc0a008a03b47b0830', '1992-12-03', 'FlowerRose', 'Sales', 'Shop Assistant', 'Romania', 'Cluj');
+call ADD_PERSON('Fracu', 'Mihai', '0724-304-187', 'mihai.fracu@yahoo.com', '0149d8308f32a3bb12137d5cc710afa9d1815e1a99c37da31bf2de1fb0fabf83', '1991-04-02', 'FlowerRose', 'IT', 'Database Keeper', 'Romania', 'Cluj');
+call ADD_PERSON('Mica', 'Alina', '0722-219-483', 'micaalin@yahoo.com', 'a1e74fa7235fb978548cc2da73e055d3b27ecb4a448f308f403536e406541b86', '1988-03-12', 'Regio', 'HR', 'HR Chief', 'Romania', 'Bucharest');
+call ADD_PERSON('Cescu', 'Catalina', '0799-234-188', 'ccatalin@yahoo.com', 'd4c72b49e7f3c13dca3d18dd9bf0170e92394860f3d5947be76a5cf9fadf84e6', '1989-11-04', 'Regio', 'Sales', 'SEO', 'France', 'Paris');
+call ADD_PERSON('Ceausu', 'Mihnea', '0714-222-345', 'mceausu@gmail.com', 'c80c791f910335a344b9a7d827cca00af6ddb59d416f928907e7179dff182868', '1996-12-03', 'MichaMich', 'Sales', 'SEO', 'Spain', 'Barcelona');
+call ADD_PERSON('Dodo', 'Adelina', '0749-299-999', 'dadelina@yahoo.com', '35ac869c65fcd31a92e2340cfa254a0ed6cb325d0ca43aaae110e757a5ea793e', '1986-06-24', 'FlowerPot', 'HR', 'Personal', 'Romania', 'Timisoara');
+call ADD_PERSON('Cosma', 'Catrina', '0788-149-227', 'ccatrina@gmail.com', '8e1e14755e7651183916f5400a935688345413f1a9b02879aed68ac45a82732e', '1955-01-01', 'BricoHouse', 'Sales', 'Shop Assistant', 'Romania', 'Constanta');
+call ADD_MSG('mihai.popescu@yahoo.com', 'dadelina@yahoo.com', 'Buna! Ce mai faci?');
+call ADD_MSG('dadelina@yahoo.com', 'mihai.popescu@yahoo.com', 'Hello! Pe la munca. Tu?');

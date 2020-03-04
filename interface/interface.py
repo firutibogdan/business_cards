@@ -621,96 +621,99 @@ async def all_companies(request):
 
 if __name__ == "__main__":
 
-	# mock-up data
-	connect_db()
-	cursor.callproc('ADD_COMPANY', ['ITSecBF', '0742-422-346', 'hr@itsecbf.com', 'Str. Dorobanti, Nr. 44', 'Internet Security', 'Romania', 'Bucharest', 44.437019, 26.086546])
-	cursor.close()
+	# # mock-up data
+	# connect_db()
+	# cursor.callproc('ADD_COMPANY', ['ITSecBF', '0742-422-346', 'hr@itsecbf.com', 'Str. Dorobanti, Nr. 44', 'Internet Security', 'Romania', 'Bucharest', 44.437019, 26.086546])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_COMPANY', ['FlowerRose', '0742-422-333', 'hr@flowerrose.com', 'Str. Anghel Petru, Nr. 21', 'Agriculture', 'Romania', 'Cluj-Napoca', 46.775389, 23.607987])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_COMPANY', ['Regio', '0742-422-297', 'apa@regio.com', 'Str. Geneva, Nr. 124', 'Water Provider', 'Romania', 'Bucharest', 44.440619, 26.082736])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_COMPANY', ['GasBack', '0743-322-546', 'gas@back.com', 'Str. Aluminiului, Nr. 21', 'Gas', 'Romania', 'Bucharest', 44.435763, 26.111755])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_COMPANY', ['FoodFood', '0729-395-283', 'hr@foodfood.com', 'Str. Mircea Bades, Nr. 1', 'Food', 'Romania', 'Iasi', 47.159092, 27.615032])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_COMPANY', ['BricoHouse', '0711-432-229', 'brico@brico.com', 'Str. Gargaritei, Nr. 29', 'House', 'Romania', 'Bucharest', 44.443971, 26.138219])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_COMPANY', ['PubliciTaT', '0763-123-334', 'pub@pub.com', 'Str. Alioanei, Nr. 95', 'Publiciy', 'Romania', 'Targu Mures', 46.542835, 24.573699])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_COMPANY', ['FlowerPot', '0712-234-558', 'pr@flowerpot.com', 'Str. Petru Rares, Nr. 139', 'Agriculture', 'Romania', 'Craiova', 44.316589, 23.819930])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_COMPANY', ['SmartPhone', '0722-199-349', 'smart@smartphone.com', 'Drumul Sarii, Nr. 9', 'Mobile Phones', 'Romania', 'Arad', 46.180103, 21.304070])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_COMPANY', ['MichaMich', '0744-542-330', 'micha@michamich.com', 'Bulevardul Revolutiei, Nr. 279', 'Hypermarket', 'Spain', 'Barcelona', 41.386158, 2.149816])
+	# cursor.close()
+
+	# # mock-up data
+	# connect_db()
+	# cursor.callproc('ADD_PERSON', ['Popescu', 'George', '0744-204-589', 'george.popescu@yahoo.com', hashlib.sha256(b'gPope3').hexdigest(), '1999-05-08', 'ITSecBF', 'IT', 'Junior Programmer', 'Romania', 'Bucharest'])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_PERSON', ['Popescu', 'Mihai', '0744-204-588', 'mihai.popescu@yahoo.com', hashlib.sha256(b'mPope3').hexdigest(), '1999-05-07', 'ITSecBF', 'IT', 'Junior Programmer', 'Romania', 'Timisoara'])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_PERSON', ['Popescu', 'Ion', '0744-204-587', 'ion.popescu@yahoo.com', hashlib.sha256(b'iPope3').hexdigest(), '1999-05-06', 'ITSecBF', 'IT', 'Junior Programmer', 'Romania', 'Timisoara'])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_PERSON', ['Mircea', 'Gheorghe', '0744-234-187', 'mircea.gheorghe@yahoo.com', hashlib.sha256(b'gMirc5').hexdigest(), '1992-12-03', 'FlowerRose', 'Sales', 'Shop Assistant', 'Romania', 'Cluj'])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_PERSON', ['Fracu', 'Mihai', '0724-304-187', 'mihai.fracu@yahoo.com', hashlib.sha256(b'mFrac5').hexdigest(), '1991-04-02', 'FlowerRose', 'IT', 'Database Keeper', 'Romania', 'Cluj'])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_PERSON', ['Mica', 'Alina', '0722-219-483', 'micaalin@yahoo.com', hashlib.sha256(b'aMica6').hexdigest(), '1988-03-12', 'Regio', 'HR', 'HR Chief', 'Romania', 'Bucharest'])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_PERSON', ['Cescu', 'Catalina', '0799-234-188', 'ccatalin@yahoo.com', hashlib.sha256(b'cCesc6').hexdigest(), '1989-11-04', 'Regio', 'Sales', 'SEO', 'France', 'Paris'])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_PERSON', ['Ceausu', 'Mihnea', '0714-222-345', 'mceausu@gmail.com', hashlib.sha256(b'mCeau9').hexdigest(), '1996-12-03', 'MichaMich', 'Sales', 'SEO', 'Spain', 'Barcelona'])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_PERSON', ['Dodo', 'Adelina', '0749-299-999', 'dadelina@yahoo.com', hashlib.sha256(b'aDodo1').hexdigest(), '1986-06-24', 'FlowerPot', 'HR', 'Personal', 'Romania', 'Timisoara'])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_PERSON', ['Cosma', 'Catrina', '0788-149-227', 'ccatrina@gmail.com', hashlib.sha256(b'cCosm2').hexdigest(), '1955-01-01', 'BricoHouse', 'Sales', 'Shop Assistant', 'Romania', 'Constanta'])
+	# cursor.close()
+
+	# connect_db()
+	# cursor.callproc('ADD_MSG', ['mihai.popescu@yahoo.com', 'dadelina@yahoo.com', 'Buna! Ce mai faci?'])
+	# cursor.close()
+
+	# sleep(1)
+
+	# connect_db()
+	# cursor.callproc('ADD_MSG', ['dadelina@yahoo.com', 'mihai.popescu@yahoo.com', 'Hello! Pe la munca. Tu?'])
+	# cursor.close()
 
 	connect_db()
-	cursor.callproc('ADD_COMPANY', ['FlowerRose', '0742-422-333', 'hr@flowerrose.com', 'Str. Anghel Petru, Nr. 21', 'Agriculture', 'Romania', 'Cluj-Napoca', 46.775389, 23.607987])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_COMPANY', ['Regio', '0742-422-297', 'apa@regio.com', 'Str. Geneva, Nr. 124', 'Water Provider', 'Romania', 'Bucharest', 44.440619, 26.082736])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_COMPANY', ['GasBack', '0743-322-546', 'gas@back.com', 'Str. Aluminiului, Nr. 21', 'Gas', 'Romania', 'Bucharest', 44.435763, 26.111755])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_COMPANY', ['FoodFood', '0729-395-283', 'hr@foodfood.com', 'Str. Mircea Bades, Nr. 1', 'Food', 'Romania', 'Iasi', 47.159092, 27.615032])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_COMPANY', ['BricoHouse', '0711-432-229', 'brico@brico.com', 'Str. Gargaritei, Nr. 29', 'House', 'Romania', 'Bucharest', 44.443971, 26.138219])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_COMPANY', ['PubliciTaT', '0763-123-334', 'pub@pub.com', 'Str. Alioanei, Nr. 95', 'Publiciy', 'Romania', 'Targu Mures', 46.542835, 24.573699])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_COMPANY', ['FlowerPot', '0712-234-558', 'pr@flowerpot.com', 'Str. Petru Rares, Nr. 139', 'Agriculture', 'Romania', 'Craiova', 44.316589, 23.819930])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_COMPANY', ['SmartPhone', '0722-199-349', 'smart@smartphone.com', 'Drumul Sarii, Nr. 9', 'Mobile Phones', 'Romania', 'Arad', 46.180103, 21.304070])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_COMPANY', ['MichaMich', '0744-542-330', 'micha@michamich.com', 'Bulevardul Revolutiei, Nr. 279', 'Hypermarket', 'Spain', 'Barcelona', 41.386158, 2.149816])
-	cursor.close()
-
-	# mock-up data
-	connect_db()
-	cursor.callproc('ADD_PERSON', ['Popescu', 'George', '0744-204-589', 'george.popescu@yahoo.com', hashlib.sha256(b'gPope3').hexdigest(), '1999-05-08', 'ITSecBF', 'IT', 'Junior Programmer', 'Romania', 'Bucharest'])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_PERSON', ['Popescu', 'Mihai', '0744-204-588', 'mihai.popescu@yahoo.com', hashlib.sha256(b'mPope3').hexdigest(), '1999-05-07', 'ITSecBF', 'IT', 'Junior Programmer', 'Romania', 'Timisoara'])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_PERSON', ['Popescu', 'Ion', '0744-204-587', 'ion.popescu@yahoo.com', hashlib.sha256(b'iPope3').hexdigest(), '1999-05-06', 'ITSecBF', 'IT', 'Junior Programmer', 'Romania', 'Timisoara'])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_PERSON', ['Mircea', 'Gheorghe', '0744-234-187', 'mircea.gheorghe@yahoo.com', hashlib.sha256(b'gMirc5').hexdigest(), '1992-12-03', 'FlowerRose', 'Sales', 'Shop Assistant', 'Romania', 'Cluj'])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_PERSON', ['Fracu', 'Mihai', '0724-304-187', 'mihai.fracu@yahoo.com', hashlib.sha256(b'mFrac5').hexdigest(), '1991-04-02', 'FlowerRose', 'IT', 'Database Keeper', 'Romania', 'Cluj'])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_PERSON', ['Mica', 'Alina', '0722-219-483', 'micaalin@yahoo.com', hashlib.sha256(b'aMica6').hexdigest(), '1988-03-12', 'Regio', 'HR', 'HR Chief', 'Romania', 'Bucharest'])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_PERSON', ['Cescu', 'Catalina', '0799-234-188', 'ccatalin@yahoo.com', hashlib.sha256(b'cCesc6').hexdigest(), '1989-11-04', 'Regio', 'Sales', 'SEO', 'France', 'Paris'])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_PERSON', ['Ceausu', 'Mihnea', '0714-222-345', 'mceausu@gmail.com', hashlib.sha256(b'mCeau9').hexdigest(), '1996-12-03', 'MichaMich', 'Sales', 'SEO', 'Spain', 'Barcelona'])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_PERSON', ['Dodo', 'Adelina', '0749-299-999', 'dadelina@yahoo.com', hashlib.sha256(b'aDodo1').hexdigest(), '1986-06-24', 'FlowerPot', 'HR', 'Personal', 'Romania', 'Timisoara'])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_PERSON', ['Cosma', 'Catrina', '0788-149-227', 'ccatrina@gmail.com', hashlib.sha256(b'cCosm2').hexdigest(), '1955-01-01', 'BricoHouse', 'Sales', 'Shop Assistant', 'Romania', 'Constanta'])
-	cursor.close()
-
-	connect_db()
-	cursor.callproc('ADD_MSG', ['mihai.popescu@yahoo.com', 'dadelina@yahoo.com', 'Buna! Ce mai faci?'])
-	cursor.close()
-
-	sleep(1)
-
-	connect_db()
-	cursor.callproc('ADD_MSG', ['dadelina@yahoo.com', 'mihai.popescu@yahoo.com', 'Hello! Pe la munca. Tu?'])
 	cursor.close()
 
 	app.run(host="0.0.0.0", port=80)

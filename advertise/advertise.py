@@ -80,7 +80,7 @@ async def start(request):
 if __name__ == "__main__":
 	connect_db()
 	cursor.close()
-
+	
 	app.static('/ads.jpg', '/app/ads.jpg', name='ads_jpg')
 	app.static('/business.jpg', '/app/business.jpg', name='business_jpg')
 	app.static('/a.jpg', '/app/a.jpg', name='a_jpg')
