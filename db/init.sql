@@ -216,7 +216,7 @@ BEGIN
 		CALL ADD_CITY(CITY_NAME_TO_ADD, COUNTRY_NAME_TO_ADD);
 
 		-- add company
-		CALL ADD_COMPANY (COMPANY_NAME_TO_ADD, '0000-000-000', 'No info available', 'No info available', 'No info available', 'No info available', 'No info available');
+		CALL ADD_COMPANY (COMPANY_NAME_TO_ADD, '0000-000-000', 'No info available', 'No info available', 'No info available', 'No info available', 'No info available', 44.000000, 25.000000);
 
 		-- get company id, department id, job id, city id
 		SELECT COMPANY_ID INTO PERSON_COMPANY FROM COMPANY WHERE LOWER(COMPANY_NAME) = LOWER(COMPANY_NAME_TO_ADD);
@@ -272,7 +272,7 @@ BEGIN
 		CALL ADD_CITY(CITY_NAME_TO_ADD, COUNTRY_NAME_TO_ADD);
 
 		-- add company
-		CALL ADD_COMPANY (COMPANY_NAME_TO_ADD, '0000-000-000', 'No info available', 'No info available', 'No info available', 'No info available', 'No info available');
+		CALL ADD_COMPANY (COMPANY_NAME_TO_ADD, '0000-000-000', 'No info available', 'No info available', 'No info available', 'No info available', 'No info available', 44.000000, 25.000000);
 
 		-- get company id, department id, job id, city id
 		SELECT COMPANY_ID INTO PERSON_COMPANY FROM COMPANY WHERE LOWER(COMPANY_NAME) = LOWER(COMPANY_NAME_TO_ADD);
