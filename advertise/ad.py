@@ -63,7 +63,7 @@ def get_html(info):
 			}
 			</script>
 
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY5hkNRAR9mc7uMs8TLi3-3WeGBI1w4LM&callback=myMap"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuVAKz_rxV0CIm5us8Z1H6WNIyXCNgYSA&callback=myMap"></script>
 
 			<script>
 			function goBack() {

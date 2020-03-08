@@ -3,7 +3,6 @@ services:
   db:
     image: mysql:5.7
     deploy:
-      replicas: 2
       restart_policy:
         condition: on-failure
     ports:
